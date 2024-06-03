@@ -13,26 +13,26 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="home.html">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="grocery.html">Aisle 1</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="grocery2.html">Aisle 2</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="checkout.html">Checkout</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="nav-link disabled" aria-disabled="true" href="home.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="grocery.html">Aisle 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link disabled" aria-disabled="true" href="grocery2.html">Aisle 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link disabled" aria-disabled="true" href="checkout.html">Checkout</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
       <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
         <symbol id="check2" viewBox="0 0 16 16">
           <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
@@ -174,7 +174,8 @@
             <p>Buy one strawberry, get one free.</p> 
             <p style="font-size:9px">Conditions Apply</p>
             <p style="font-size:9px">One per purchase</p>
-            <button class="btn btn-primary" onclick="bogo=true">
+            <p style="font-size:9px">Must use coupon at 3:01AM</p>
+            <button class="btn btn-primary" id="bogo">
               Activate
             </button>
           </div>
@@ -188,8 +189,8 @@
             <p>Get 15% off of your whole purchase</p> 
             <p style="font-size:9px">Conditions Apply</p>
             <p style="font-size:9px">One per purchase</p>
-            <p style="font-size:9px">Order must be over $100</p>
-            <button class="btn btn-primary" onclick="fifteenOff=true">
+            <p style="font-size:9px">Order must be over $10000000</p>
+            <button class="btn btn-primary" id="fifteenOff">
               Activate
             </button>
           </div>
@@ -203,7 +204,8 @@
             <p>Get free shipping on your order</p>
             <p style="font-size:9px">Conditions Apply</p>
             <p style="font-size:9px">Only for online purchases</p>
-            <button class="btn btn-primary" onclick="shipping=true">
+            <p style="font-size:9px">Must be related to owner</p>
+            <button class="btn btn-primary" id="shipping">
               Activate
             </button>
           </div>
